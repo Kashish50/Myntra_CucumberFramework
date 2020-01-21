@@ -1,0 +1,3 @@
+INFO    2020-01-21 16:08:25,921 [pool-1-thread-2] com.w2a.cucumber.zoho.steps.BaseSteps  - Config properties file loaded
+INFO    2020-01-21 16:08:28,579 [pool-1-thread-2] com.w2a.cucumber.zoho.steps.BaseSteps  - Driver Initialized !!!
+INFO    2020-01-21 16:08:36,958 [pool-1-thread-2] com.w2a.cucumber.zoho.steps.BaseSteps  - Test Execution Completed !!!

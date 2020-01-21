@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.334 sec <<< FAILURE! - in TestSuite
+runCukes(com.w2a.cucumber.zoho.runners.LoginFeatureRunner)  Time elapsed: 2.13 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.Error: Unresolved compilation problems: 
+	The method firefox() is undefined for the type DesiredCapabilities
+	The method chrome() is undefined for the type DesiredCapabilities
+	The method internetExplorer() is undefined for the type DesiredCapabilities
+
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at com.w2a.cucumber.zoho.runners.LoginFeatureRunner.runCukes(LoginFeatureRunner.java:22)
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method firefox() is undefined for the type DesiredCapabilities
+	The method chrome() is undefined for the type DesiredCapabilities
+	The method internetExplorer() is undefined for the type DesiredCapabilities
+
+	at com.w2a.cucumber.zoho.steps.BaseSteps.openBrowser(BaseSteps.java:145)
+	at com.w2a.cucumber.zoho.steps.ZohoSteps.launch_browser(ZohoSteps.java:65)
+	at ?.Given launch browser 'firefox'(src/test/resources/features/login.feature:4)
+
+runCukes(com.w2a.cucumber.zoho.runners.ValidateCRMFeatureRunner)  Time elapsed: 3.104 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.Error: Unresolved compilation problems: 
+	The method firefox() is undefined for the type DesiredCapabilities
+	The method chrome() is undefined for the type DesiredCapabilities
+	The method internetExplorer() is undefined for the type DesiredCapabilities
+
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at com.w2a.cucumber.zoho.runners.ValidateCRMFeatureRunner.runCukes(ValidateCRMFeatureRunner.java:22)
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method firefox() is undefined for the type DesiredCapabilities
+	The method chrome() is undefined for the type DesiredCapabilities
+	The method internetExplorer() is undefined for the type DesiredCapabilities
+
+	at com.w2a.cucumber.zoho.steps.BaseSteps.openBrowser(BaseSteps.java:145)
+	at com.w2a.cucumber.zoho.steps.ZohoSteps.launch_browser(ZohoSteps.java:65)
+	at ?.Given launch browser 'firefox'(src/test/resources/features/validateCRM.feature:4)
+

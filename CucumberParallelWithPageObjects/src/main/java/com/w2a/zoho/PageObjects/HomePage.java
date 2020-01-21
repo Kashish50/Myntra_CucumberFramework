@@ -1,0 +1,56 @@
+package com.w2a.zoho.PageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+public class HomePage extends BasePage {
+
+	@FindBy(xpath = "//div[@class='desktop-userIconsContainer']")
+	public WebElement iconProfile;
+
+	@FindBy(xpath = "//a[@data-track='login']")
+	public WebElement btnLogin;
+
+	@FindBy(xpath = "//a[@data-track='signup']")
+	public WebElement btnSignUp;
+	
+	
+
+	public HomePage doLoginAsInvalidUser(String username, String password) {
+
+	//	type(email, username, "Username textbox");
+		// type(pass, password, "Password textbox");
+		// click(signin, "Sign in Button");
+
+		return this;
+
+	}
+
+	public ZohoAppPage doLoginAsValidUser(String username, String password) {
+
+	//	type(email, username, "Username textbox");
+		// type(pass, password, "Password textbox");
+		// click(signin, "Sign in Button");
+
+		return (ZohoAppPage) openPage(ZohoAppPage.class);
+
+	}
+	
+	public LoginPage navigateToLoginPage() {
+		hoverOverElement(iconProfile);
+		click(btnLogin , "Button Login");
+		return (LoginPage) openPage(LoginPage.class);
+		
+	}
+
+	@Override
+	protected ExpectedCondition getPageLoadCondition() {
+		// TODO Auto-generated method stub
+		return ExpectedConditions.visibilityOf(iconProfile);
+	}
+
+}
