@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="29142" started-at="2020-01-22T08:26:29Z" finished-at="2020-01-22T08:26:58Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="29142" started-at="2020-01-22T08:26:29Z" finished-at="2020-01-22T08:26:58Z">
+      <class name="com.w2a.cucumber.zoho.runners.ValidateCRMFeatureRunner">
+        <test-method status="PASS" signature="runCukes()[pri:0, instance:com.w2a.cucumber.zoho.runners.ValidateCRMFeatureRunner@6500df86]" name="runCukes" duration-ms="29114" started-at="2020-01-22T13:56:29Z" finished-at="2020-01-22T13:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCukes -->
+      </class> <!-- com.w2a.cucumber.zoho.runners.ValidateCRMFeatureRunner -->
+      <class name="com.w2a.cucumber.zoho.runners.LoginFeatureRunner">
+        <test-method status="PASS" signature="runCukes()[pri:0, instance:com.w2a.cucumber.zoho.runners.LoginFeatureRunner@271053e1]" name="runCukes" duration-ms="24313" started-at="2020-01-22T13:56:29Z" finished-at="2020-01-22T13:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCukes -->
+      </class> <!-- com.w2a.cucumber.zoho.runners.LoginFeatureRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
