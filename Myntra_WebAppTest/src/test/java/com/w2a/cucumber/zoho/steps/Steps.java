@@ -13,6 +13,7 @@ import cucumber.api.PendingException;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -76,7 +77,7 @@ public class Steps extends BaseSteps {
 
 	}
 
-	@Then("^the user Navigates to the Login Page$")
+	@And("^the user Navigates to the Login Page$")
 	public void the_user_Navigates_to_the_Login_Page() throws Throwable {
 		loginPage = home.navigateToLoginPage();
 
@@ -93,14 +94,25 @@ public class Steps extends BaseSteps {
 		myAccPage.verifyNameOfLoggedInUser(strName);
 	}
 	
-	@Then("^I search a Item \"([^\"]*)\"$")
+	@And("^I search a Item \"([^\"]*)\"$")
 	public void i_search_a_Item(String strItemName) throws Throwable {
 		myAccPage.searchAItem(strItemName);
 	}
 
-	@Then("^I add Item Number \"([^\"]*)\" to the cart$")
+	@And("^I add Item Number \"([^\"]*)\" to the cart$")
 	public void i_add_Item_Number_to_the_cart(int ItemNumber) throws Throwable {
 		myAccPage.additemToBag(ItemNumber);
 	}
+	
+	@And("^I select Product size\"([^\"]*)\"$")
+	public void i_select_Product_size(String strSize) throws Throwable {
+		myAccPage.selectProductSize(strSize);
+	}
+	
+	@Then("^I select another product$")
+	public void i_select_another_product() throws Throwable {
+		myAccPage.selectAProductByImage();
+	}
+
 
 }

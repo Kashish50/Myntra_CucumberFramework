@@ -7,4 +7,7 @@ Feature: Login to Myntra
     And Login with Username "kashishpasrija82@gmail.com" and Password "Kas@0000"
     Then User "kashishpasrija82@gmail.com" gets Logged Into Myntra Account Successfully
     Then I search a Item "US Polo Black Shirts"
-    And I add Item Number "4" to the cart
+    And I add Item Number "5" to the cart
+    And I select Product size"XL"
+    Then I select another product
+    
