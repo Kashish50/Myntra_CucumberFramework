@@ -16,6 +16,7 @@ public class DriverManager {
 	public static void setWebDriver(WebDriver driver) {
 
 		dr.set(driver);
+	
 	}
 
 }

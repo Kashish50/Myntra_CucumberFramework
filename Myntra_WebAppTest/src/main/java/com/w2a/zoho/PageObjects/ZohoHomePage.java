@@ -33,6 +33,7 @@ public class ZohoHomePage extends BasePage {
 	protected ExpectedCondition getPageLoadCondition() {
 		// TODO Auto-generated method stub
 		return ExpectedConditions.visibilityOf(logIn);
+	
 	}
 	
 	

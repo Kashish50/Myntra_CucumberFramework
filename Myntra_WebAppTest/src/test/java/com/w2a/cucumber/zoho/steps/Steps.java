@@ -112,6 +112,7 @@ public class Steps extends BaseSteps {
 	@Then("^I select another product$")
 	public void i_select_another_product() throws Throwable {
 		myAccPage.selectAProductByImage();
+	
 	}
 
 

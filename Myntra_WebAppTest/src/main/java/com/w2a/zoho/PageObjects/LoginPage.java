@@ -32,6 +32,7 @@ public class LoginPage extends BasePage {
 
 		return (MyAccountPage) openPage(MyAccountPage.class);
 
+	
 	}
 
 }

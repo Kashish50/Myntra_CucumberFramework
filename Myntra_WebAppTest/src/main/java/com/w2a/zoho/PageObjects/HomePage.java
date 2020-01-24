@@ -64,6 +64,7 @@ public class HomePage extends BasePage {
 	protected ExpectedCondition getPageLoadCondition() {
 		// TODO Auto-generated method stub
 		return ExpectedConditions.visibilityOf(iconProfile);
+	
 	}
 
 }

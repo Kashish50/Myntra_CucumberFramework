@@ -192,6 +192,7 @@ public class MyAccountPage extends BasePage {
 				System.out.println("Images are Same");
 			}
 
+		
 		}
 
 	}

@@ -9,5 +9,5 @@ Feature: Login to Myntra
     Then I search a Item "US Polo Black Shirts"
     And I add Item Number "5" to the cart
     And I select Product size"XL"
-    Then I select another product
+    Then I select another product 
     
